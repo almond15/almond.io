@@ -285,7 +285,7 @@
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
-  animation: pulse 2s infinite;
+  animation-duration: pulse 2s infinite;
 }
 
 @-webkit-keyframes headShake {
@@ -357,7 +357,6 @@
   animation-timing-function: ease-in-out;
   -webkit-animation-name: headShake;
   animation-name: headShake;
-  animation: pulse 2s infinite;
 }
 
 @-webkit-keyframes swing {
