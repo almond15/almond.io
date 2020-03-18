@@ -1,9 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
  <head>
-  <title> welcome </title> 
- </head>
- <meta charset="UTF-8">
- <meta name="referrer" content="none" id="meta_referrer"/>
+  <title> SJC | B'lore </title>
+
+  <!-- meta tag declarations given below -->
+  <meta charset="utf-8"/>
+  <meta name="referrer" content="none" id="meta_referrer"/>
   <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1 , minimum-scale=1 , user-scalable=no"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="mobile-web-app-capable" content="yes"/>
@@ -11,79 +13,37 @@
   <meta name="author" content="Mayur , mayurtech009@gmail.com">
   <meta http-equiv="cache-control" content="no-cache">
 
-   <!-- external links -->
+  <!-- external links -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="animate.css">
 
-  <link rel="stylesheet" href="animate.css">
-  <style type="text/css">
-  	body, h1, h2, h3, h4, h5, h6 {
-  		background-color: white;
-  		color: #FF69B4;
-  		font-family: "Open Sans", sans-serif;
-  	}
-  </style>
+  <!-- internal style declarations -->
+  <style>
+html, body, h1, h2, h3, h4, h5, p {font-family: "Open Sans", sans-serif}
+
+body{
+  background-image: 
+}
+
+</style>
  </head>
-  <body>
-<center>
-<br>
-  <h1 style="color:black;" class="animated FadeInRight"> Yaayy!! &#128584; </h1>
-</center>
-   <center>
-    <h5> <p style="color:firebrick;" class="animated FadeInLeft" id="demo"></p> </h5>
-    <h5> <p style="color:black;"> of Knowing You! <p> </h5>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("april18 , 2020 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " Days | " + hours + " hours | "
-  + minutes + " minutes | " + seconds + " seconds";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-   </center>
-
-<div class="w3-container w3-content" style="position:absolute; top:50% ; left:50% ; transform: translateX(-50%) translateY(-50%);">   
-      <!-- Profile -->
-      <div class="w3-card w3-white">
-        <div class="w3-container">
-<center>
-              <h1><b><p> Monisha </p></b></h1>
-</center>
-        </div>
-      </div> 
- <br>
- <br>
- <center>
-  <h4> <p style="color:green;" class="animated shake"> 1 Month Eeeee &#128513; </p> </h4>
- </center>
- <br>
- <br>
- <center>
-<img src="https://hitwebcounter.com/counter/counter.php?page=7210623&style=0007&nbdigits=5&type=page&initCount=0" title="User Stats" Alt="webcounterwebsite"   border="0" >
- </center>
-  </body>
+ <body>
+ <div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" class="w3-container w3-center">
+  <h1 class="animated shake" style="color: black;"> Sign In </h1>
+  <div class="w3-card-4">
+    <form style="padding:20px;">
+    <p style="color:navy;padding:2px;"><b style="padding-right: 4px;"> Username </b>
+      <input style="border-width: 1px;border-color: teal;" type="text" name="tname" placeholder=" Enter Username"></p>
+    <p style="color:navy;padding:2px;"><b style="padding-right: 4px;"> Password </b>
+      <input style="border-width: 1px;border-color: teal;"type="password" name="psw" placeholder=" Enter Password"></p>
+      <p>
+      <a href="" style="text-decoration: none;"> forgot password? </a></p>
+      <button class="w3-button w3-small w3-teal" type="submit"> Click Me </button>
+    </form>
+  </div>
+ </div>
+ </body>
 </html>
