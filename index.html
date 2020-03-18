@@ -33,7 +33,7 @@
   <h4 style="color:navy;" class="animated FadeInRight"> Its 1 month of knowing You &#128584; </h4>
 </center>
    <center>
-    <h3> <p style="color:firebrick;" class="animated Bounce" id="demo"></p> </h3>
+    <h4> <p style="color:firebrick;" class="animated FadeInLeft" id="demo"></p> </h4>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("april 18 , 2020 00:00:00").getTime();
@@ -54,8 +54,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days" + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds";
+  document.getElementById("demo").innerHTML = days + " Days | " + hours + " hours | "
+  + minutes + " minutes | " + seconds + " seconds | of Knowing you";
     
   // If the count down is over, write some text 
   if (distance < 0) {
