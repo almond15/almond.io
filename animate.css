@@ -357,6 +357,7 @@
   animation-timing-function: ease-in-out;
   -webkit-animation-name: headShake;
   animation-name: headShake;
+  animation: pulse 2s infinite;
 }
 
 @-webkit-keyframes swing {
