@@ -1,89 +1,77 @@
-<html>
- <head>
-  <title> welcome </title> 
- </head>
- <meta charset="UTF-8">
- <meta name="referrer" content="none" id="meta_referrer"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1 , minimum-scale=1 , user-scalable=no"/>
-  <meta name="apple-mobile-web-app-capable" content="yes"/>
-  <meta name="mobile-web-app-capable" content="yes"/>
-  <meta http-equiv="X-UA-Compatible" content="IE-edge , chrome=1"/>
-  <meta name="author" content="Mayur , mayurtech009@gmail.com">
-  <meta http-equiv="cache-control" content="no-cache">
+<html lang="en">
+<title> Welcome </title>
+<!-- meta tag declarations -->
+<meta charset="utf-8"/> 
+<meta name="referrer" content="none" id="meta_referrer"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1 , minimum-scale=1 , user-scalable=no"/> <meta name="apple-mobile-web-app-capable" content="yes"/> 
+<meta name="mobile-web-app-capable" content="yes"/> 
+<meta http-equiv="X-UA-Compatible" content="IE-edge , chrome=1"/>
+<meta name="author" content="Mayur , mayurtech009@gmail.com">
+<meta name="url" content="https://mayurhosting.github.io/techsavvy/">
+<meta http-equiv="cache-control" content="no-cache">
 
-   <!-- external links -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- external link declarations--> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="animate.css">
-  <style type="text/css">
-  	body, h1, h2, h3, h4, h5, h6 {
-  		background-color: white;
-  		color: #FF69B4;
-  		font-family: "Open Sans", sans-serif;
-  	}
-  </style>
- </head>
-  <body>
-<center>
-<br>
-  <h1 style="color:black;" class="animated FadeInRight"> Yaayy!! &#128584; </h1>
-</center>
-   <center>
-    <h5> <p style="color:firebrick;" class="animated FadeInLeft" id="demo"></p> </h5>
-    <h5> <p style="color:black;"> of Knowing You! <p> </h5>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("april18 , 2020 00:00:00").getTime();
+<!-- css style tag declarations below this --> 
+<style type="text/CSS">
+body,h1,h2,h3,h4,h5,h6
+{
+font-family: "Raleway", sans-serif
+} 
+body, html 
+{ 
+height:100%; line-height:1.8; content-align:center;
+}
+.w3-bar .w3-button 
+{ 
+padding: 16px;
+}
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+#footer
+{
+position:absolute;
+width:100%;
+text-align:center;
+text-decoration:none;
+background:linear-gradient(to bottom, black 0% , black 100%);
+bottom:0;
+color:white;
+}
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " Days | " + hours + " hours | "
-  + minutes + " minutes | " + seconds + " seconds";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-   </center>
+h1
+{
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translateX(-50%) translateY(-50%);
+}
 
-<div class="w3-container w3-content" style="position:absolute; top:50% ; left:50% ; transform: translateX(-50%) translateY(-50%);">   
-      <!-- Profile -->
-      <div class="w3-card w3-white">
-        <div class="w3-container">
-<center>
-              <h1><b><p> Monisha </p></b></h1>
-</center>
-        </div>
-      </div> 
- <br>
- <br>
- <center>
-  <h4> <p style="color:green;" class="animated shake"> 1 Month Eeeee &#128513; </p> </h4>
- </center>
- <br>
- <br>
- <center>
-<img src="https://hitwebcounter.com/counter/counter.php?page=7210623&style=0007&nbdigits=5&type=page&initCount=0" title="User Stats" Alt="webcounterwebsite"   border="0" >
- </center>
-  </body>
+</style>
+
+<body>
+<!-- Navbar (sits on top) -->
+<div class="w3-top"> 
+<div class="w3-bar w3-white w3-card" id="myNavbar">
+<font style="background:linear-gradient(to bottom, white 0%, white 100%);" class="w3-bar-item w3-wide">
+<h5 style="color:black;"><i style="float:center;padding:4px;padding-right:10px;color:firebrick;" class="fa fa-bars w3-xlarge"></i><b> St.Joseph's College </b></h5></font>
+</div>
+</div>
+
+<!-- Navbar (sits on bottom) -->
+<div class="w3-bottom w3-center"> 
+<div class="w3-bar w3-white w3-card" id="myNavbar">
+<font style="color:black;" class="w3-bar-item w3-wide">
+  <i style="padding:6px;" class="fa fa-home w3-xlarge"></i>
+  <i style="padding-left:15px;padding-right:10px;"class="fa fa-check-circle w3-xlarge"></i>
+  <i style="padding-right:15px;padding-left:10px;"class="fa fa-institution w3-xlarge"></i>
+  <i style="padding:6px;"class="fa fa-user w3-xlarge"></i>
+</font>
+</div>
+</div>
+<iframe src="https://mayurhosting.github.io/techsavvy/" style="width:100%;height:100%;border:0px solid white;"></iframe>
+
+</body>
 </html>
