@@ -1,45 +1,183 @@
-<html>
- <head>
-   <link rel="stylesheet" type="text/css" href="cure.css">
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.">
-   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
- </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> test loader </title>
 
+	<style type="text/css">
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+  }
+
+ body {
+    background-color: #21BF73;
+    height: 100vh;
+    display: flex;
+ }
+
+ .container {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    margin: auto;
+ }
+
+ .element1, .element2, .element3 {
+ 	width: 280px;
+ 	height: 280px;
+ 	border: 10px solid #FEFFFE;
+ 	border-radius: 50px;
+ 	position: absolute;
+ 	animation: loading1 2s infinite;
+ 	box-shadow: inset 0px 0px 7px 0px rgba(65, 65, 65, 0.5), 0px, 0px, 7px, 0px rgba(0,0,0,0.5);
+ }
+
+ .element2, .element3 {
+    animation: loading2 2s infinite;
+ }
+
+ .element3 {
+ 	animation: loading3 2s infinite;
+ }
+
+ @keyframes loading1{
+
+ 	0% {
+       
+        height: 100px;
+        width: 280px;
+        top: 0;
+        left: 0;
+ 	}
+
+ 	25% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 0;
+ 		left: 180px;
+ 	}
+
+ 	50% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 0;
+ 		left: 180px;
+ 	}
+
+ 	75% {
+
+ 		height: 280px;
+ 		width: 100px;
+ 		top: 0;
+ 		left: 180px;
+ 	}
+
+ 	100% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 180px;
+ 		left: 180px;
+ 	}
+ }
+
+ @keyframes loading2{
+
+ 	0% {
+       
+        height: 100px;
+        width: 100px;
+        top: 180px;
+        left: 0;
+ 	}
+
+ 	25% {
+
+ 		height: 280px;
+ 		width: 100px;
+ 		top: 0;
+ 		left: 0;
+ 	}
+
+ 	50% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 0;
+ 		left: 0;
+ 	}
+
+ 	75% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 0;
+ 		left: 0;
+ 	}
+
+ 	100% {
+
+ 		height: 100px;
+ 		width: 280px;
+ 		top: 0;
+ 		left: 0;
+ 	}
+ }
+
+ @keyframes loading3{
+
+ 	0% {
+       
+        height: 100px;
+        width: 100px;
+        top: 180px;
+        left: 180px;
+ 	}
+
+ 	25% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 180px;
+ 		left: 180px;
+ 	}
+
+ 	50% {
+
+ 		height: 100px;
+ 		width: 280px;
+ 		top: 180px;
+ 		left: 0;
+ 	}
+
+ 	75% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 180px;
+ 		left: 0;
+ 	}
+
+ 	100% {
+
+ 		height: 100px;
+ 		width: 100px;
+ 		top: 180px;
+ 		left: 0;
+ 	}
+ }
+	</style>
+
+</head>
 <body>
-  <div class="container">
-    <h1 class="text-center"> St. Joseph's College Autonomous </h1>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Sign In</h5>
-            <form class="form-signin">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">Email address</label>
-              </div>
-
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
-
-              <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Remember password</label>
-              </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-              <hr class="my-4">
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+   <div class="container">
+     <div class="element1"></div>
+     <div class="element2"></div>
+     <div class="element3"></div>
+   </div>
 </body>
+</html>
